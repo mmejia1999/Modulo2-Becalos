@@ -1,0 +1,87 @@
+
+/*Selector Universal*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* Comentario 
+largo
+Selector de tipo: Etiqueta
+*/
+body{
+    background-color: chocolate;
+     
+}
+
+main{
+  /*Ajustar las tarjetas a varias lineas*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1{
+    color:blueviolet;
+}
+
+/*Selector de tipo: Clase
+Reutilizar estilos
+*/
+
+.tarjeta {
+    width: 320px;
+    background-color: antiquewhite;
+    border-radius: 3%;
+/*Centrando elementos*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /*Separacion*/
+    transition: all 0.4s ease-in-out; /*Transicion suave*/
+}
+
+/*Pseudoclase para crear animaciones*/
+.tarjeta:hover{
+    background-color: rgb(241, 191, 124);
+    transform: scale(1.05) rotate(3deg);
+}
+
+.tarjeta .imagen{
+    width: 300px;
+    background-color: yellow;
+}
+
+.tarjeta img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.tarjeta p{
+
+    color: brown;
+    font-size: 20px;
+}
+
+/*Selector de tipo ID
+Es UNICO, algo que no se va a repetir
+*/
+#gato{
+    color: blueviolet;
+}
+
+#perro{
+    color: blue;
+}
+#jirafa{
+    color: coral;
+}
+#mariposa{
+    color: chartreuse;
+}
+#tigre{
+color: darkcyan;
+}
