@@ -7,11 +7,11 @@
 }
 
 /*CSS que me dio Google Fonts*/
-.patrick-hand-regular {
+/*.patrick-hand-regular {
     font-family: "Patrick Hand", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+  }*/
 
 
 /* Comentario 
@@ -21,8 +21,9 @@ Selector de tipo: Etiqueta
 body{
     background-color: chocolate;
     font-family: "Patrick Hand", cursive;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
+ 
 }
 
 
@@ -32,10 +33,12 @@ main{
   /*Ajustar las tarjetas a varias lineas*/
   display: flex;
   flex-wrap: wrap;
+ 
 }
 
 h1{
-    color:blueviolet;
+    color:white;
+    text-align: center;
 }
 
 /*Selector de tipo: Clase
@@ -44,7 +47,7 @@ Reutilizar estilos
 
 .tarjeta {
     width: 320px;
-    height: 335px;
+    height: 370px;
     background-color: antiquewhite;
     border-radius: 3%;
 /*Centrando elementos*/
@@ -53,22 +56,16 @@ Reutilizar estilos
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    /*
-    margin-top: 10px; Separacion
-    margin-right: 15px;
-    margin-bottom: 7px;
-    margin-left: 14px;
-    
-    margin: 10px 15px 7px 14px;*/
-    border: 3px solid black;;
-    padding: 12px;
+    margin: 15px;
+    padding: 15px;
+    border: 3px solid black;
     transition: all 0.4s ease-in-out; /*Transicion suave*/
+    
 }
-/*
+
 .titulo-tarjeta{
     margin-bottom: 10px;
-}*/
+}
 
 /*Pseudoclase para crear animaciones*/
 .tarjeta:hover{
@@ -95,7 +92,8 @@ Reutilizar estilos
 .tarjeta p{
 
     color: brown;
-    font-size: 20px;
+    padding: 5px;
+   /*font-size: 20px;*/
 }
 
 /*Selector de tipo ID
